@@ -1,35 +1,82 @@
   :root{
-    --primary-text-color: #212121;
-    --title-text-color: #757575;
-    --accent-color: #FFFFFF;
-    --logo-color: #2196F3;
-    --primary-bg-color: #E5E5E5;
+    --primary-text-color: #757575;
+    --title-text-color: #212121;
+    --secondary-text-color: #FFFFFF;
+    --accent-color: #2196f3;
+    --button-accent-color: #188ce8;
+    --primary-bg-color: #FFFFFF;
+  }
+
+  body{
+    background-color: #E5E5E5;
+    color: var(--primary-text-color);    
   }
 
   .list{
-
+    list-style: none;
   }
- /* Логотип */
+
+ /* Logo */
   .logo{
-      color: #2196f3;
+      color: var(--accent-color);
       font-family: 'Raleway' sans-serif;       
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
-    ff
+  }
+
+  .logo .studio-black{
+    color: var(--title-text-color);
   }
 
   /* Site-nav */
   .site-nav .link{
-      color: #212121;
+      color: var(--title-text-color);
   }
   
   .site-nav .link:hover, 
   .site-nav .link:focus{
-      color: #2196F3;
+      color: var(--accent-color);
   }
+
+  .site-nav .link.current{
+    color: var(--accent-color);
+  }
+
+  /* Contacts*/
+
   .contacts .link{
-      color: #757575;
+    color: var(--primary-text-color);
   }
+  .contacts .link:hover,
+  .contacts .link:focus{
+      color: var(--accent-color);
+  }
+
+ /* Hero */
+  .hero-title{
+    color: var(--secondary-text-color);
+  }
+
+  button{
+    background-color: var(--accent-color);
+    color: var(--secondary-text-color)
+  }
+
+  button:hover,
+  button:focus{
+    background-color: var(--button-accent-color);
+  }
+
+  /* Section */  
+  .section-title{
+    color: var(--title-text-color);
+  }
+
+  /* Features */
+  .features-title{
+    color: var(--title-text-color);
+  }
+  
   
